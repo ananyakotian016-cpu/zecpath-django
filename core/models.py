@@ -1,5 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
+
+# Database models for Zecpath
+
 class Employer(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     company_name = models.CharField(max_length=150)
